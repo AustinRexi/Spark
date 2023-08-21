@@ -5,7 +5,15 @@ function Body() {
     <div className="app">
       <Container maxWidth="xl">
         <Box sx={{ my: 32 }}>
-          <Button variant="contained" size="large" color="secondary">
+          <Button
+            sx={{ display: { xs: "block", md: "none" }, mb: 2, ml: 11, px: 8 }}
+            variant="contained"
+            size="large"
+            color="white"
+          >
+            Log in
+          </Button>
+          <Button variant="contained" size="large" color="white">
             Create Account
           </Button>
         </Box>
