@@ -1,21 +1,53 @@
 import Container from "@mui/material/Container";
-import { Box, Button } from "@mui/material";
+import Google from "../Googleplay/Google";
+import { Box, Button, Typography } from "@mui/material";
+
 function Body() {
   return (
     <div className="app">
-      <Container maxWidth="xl">
-        <Box sx={{ my: 32 }}>
+      <Container maxWidth="sm">
+        <Box sx={{ my: 20 }}>
           <Button
-            sx={{ display: { xs: "block", md: "none" }, mb: 2, ml: 11, px: 8 }}
+            sx={{
+              display: { md: "none" },
+              mb: 2,
+              mx: 11,
+            }}
             variant="contained"
             size="large"
             color="white"
           >
-            Log in
+            <Typography
+              sx={{
+                fontFamily: "Raleway",
+
+                letterSpacing: ".2rem",
+                color: "white",
+              }}
+              variant="h6"
+            >
+              Log in
+            </Typography>
           </Button>
-          <Button variant="contained" size="large" color="white">
-            Create Account
+          <Button
+            sx={{ ml: 11 }}
+            variant="contained"
+            size="small"
+            color="white"
+          >
+            <Typography
+              sx={{
+                fontFamily: "Raleway",
+
+                letterSpacing: ".2rem",
+                color: "white",
+              }}
+              variant="h6"
+            >
+              Create Account
+            </Typography>
           </Button>
+          <Google />
         </Box>
       </Container>
     </div>
