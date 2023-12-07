@@ -11,7 +11,7 @@ function Shadow() {
     {
       name: "Rebecca",
       content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here after there Lorem Ipsum is that it has a more-or-",
     },
     {
       name: "Shannon",
@@ -35,18 +35,18 @@ function Shadow() {
           flexGrow: 1,
 
           width: 2500,
-          height: 3000,
+          height: 2700,
           mt: 18,
           pl: 7,
         },
       }}
     >
       <Paper elevation={24}>
-        <Grid container spacing={0}>
+        <Grid container spacing={1}>
           {boxes.map((text, index) => {
             return (
               <Grid item key={index} xs={10} md={4}>
-                <Card sx={{ minWidth: 150, mb: 2, mt: 6, mx: 1 }}>
+                <Card sx={{ minWidth: 250, mb: 2, mt: 6, mx: 1 }}>
                   <CardContent key={index}>
                     <Typography
                       sx={{ fontSize: 16, flexWrap: "wrap", m: 1 }}
