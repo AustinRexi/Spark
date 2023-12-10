@@ -34,8 +34,8 @@ function Shadow() {
         "& > :not(style)": {
           flexGrow: 1,
 
-          width: 2500,
-          height: 2700,
+          width: 2200,
+          height: "50%",
           mt: 18,
           pl: 7,
         },
